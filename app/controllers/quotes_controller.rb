@@ -22,6 +22,9 @@ class QuotesController < ApplicationController
     end
   end
 
+  def edit
+  end
+
   private
 
   def set_quote
