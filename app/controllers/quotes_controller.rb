@@ -19,4 +19,10 @@ class QuotesController < ApplicationController
       render :new
     end
   end
+
+  private
+
+  def quote_params
+    params.require(:quote).permit(:name)
+  end
 end
